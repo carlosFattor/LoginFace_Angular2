@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Teste Login Facebook
+
+                    <div *ngIf="!isUser">
+                        <button (click)="login()" class="btn btn-info"> Log In Facebook </button>
+                        <div>
+                            <div *ngIf="isUser">
+                                <h2> Welcome {{name}} </h2>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
